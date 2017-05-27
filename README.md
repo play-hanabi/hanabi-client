@@ -15,6 +15,7 @@ An Elm client for Hanabi.
 > delightful language for reliable webapps
 
 ## Setup
+### Installing Elm
 This project relies on [Elm][elm]. There are various [installers][install] for
 Elm. One way to install Elm relies on [npm][] that should work on any platform.
 The command to install Elm globally via npm is:
@@ -23,7 +24,19 @@ The command to install Elm globally via npm is:
 npm install --global elm
 ```
 
+### Running Elm
+To run the Hanabi Client use Elm to start a [reactor][]
+
+```shell
+elm reactor
+```
+
+and open
+[http://localhost:8000/src/Hanabi.elm](http://localhost:8000/src/Hanabi.elm)
+in your browser. 
+
 [hanabi]: https://en.wikipedia.org/wiki/Hanabi_(card_game)
 [elm]: http://elm-lang.org/
 [instal]: https://guide.elm-lang.org/install.html
 [npm]: https://www.npmjs.com/
+[reactor]: https://github.com/elm-lang/elm-reactor
