@@ -10,9 +10,20 @@ An Elm client for Hanabi.
 > specific order to set off a simulated fireworks show.
 
 ### Elm
-[elm][] is a
+[Elm][elm] is a
 
 > delightful language for reliable webapps
 
+## Setup
+This project relies on [Elm][elm]. There are various [installers][install] for
+Elm. One way to install Elm relies on [npm][] that should work on any platform.
+The command to install Elm globally via npm is:
+
+```shell
+npm install --global elm
+```
+
 [hanabi]: https://en.wikipedia.org/wiki/Hanabi_(card_game)
 [elm]: http://elm-lang.org/
+[instal]: https://guide.elm-lang.org/install.html
+[npm]: https://www.npmjs.com/
