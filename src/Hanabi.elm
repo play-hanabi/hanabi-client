@@ -7,6 +7,7 @@ module Hanabi exposing (main)
 import Html
 import Hanabi.Card exposing (card)
 import Hanabi.Hand
+import Hanabi.Pile
 
 
 aHand : Hanabi.Hand.Hand
@@ -19,7 +20,23 @@ aHand =
     , card 5 Hanabi.Card.Blue
     ]
 
+
+aPile : Hanabi.Pile.Pile
+aPile =
+    [
+      card 1 Hanabi.Card.White
+    , card 1 Hanabi.Card.Red
+    , card 1 Hanabi.Card.Yellow
+    , card 1 Hanabi.Card.Green
+    , card 1 Hanabi.Card.Blue
+    ]
+
+
 {-| function to show the client UI
 -}
 main : Html.Html msg
-main = Hanabi.Hand.view aHand
+main = Html.div []
+       [
+         Hanabi.Hand.view aHand
+       , Hanabi.Pile.view aPile
+       ]
