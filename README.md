@@ -34,6 +34,29 @@ elm reactor
 and open
 [http://localhost:8000/src/Hanabi.elm](http://localhost:8000/src/Hanabi.elm)
 in your browser. 
+ 
+### Building Project
+To build the project execute the following command.
+
+```shell
+elm make --output js/hanabi.js
+```
+
+### Using `hanabi.js`
+Create an `index.html` with the following content.
+
+```html
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <script src="js/hanabi.js"></script>
+  <script>
+    const node = document.getElementById('container');
+    Elm.Hanabi.embed(node);
+  </script>
+</html>
+```
 
 [hanabi]: https://en.wikipedia.org/wiki/Hanabi_(card_game)
 [elm]: http://elm-lang.org/
