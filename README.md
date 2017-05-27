@@ -1,2 +1,2 @@
-# hanabi-client
-An Elm client for Hanabi
+# Hanabi Client
+An Elm client for Hanabi.
