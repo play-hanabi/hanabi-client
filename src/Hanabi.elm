@@ -8,6 +8,7 @@ import Html
 import Hanabi.Card exposing (card)
 import Hanabi.Hand
 import Hanabi.Pile
+import Hanabi.Game
 
 
 aHand : Hanabi.Hand.Hand
@@ -32,11 +33,16 @@ aPile =
     ]
 
 
+aGame : Hanabi.Game.Game
+aGame =
+    {
+      ownHand = aHand
+    , otherHands = [ [ card 1 Hanabi.Card.Red, card 2 Hanabi.Card.Red ] ]
+    , played  = [ card 1 Hanabi.Card.Blue, card 2 Hanabi.Card.Blue ]
+    , discard = aPile
+    }
+
 {-| function to show the client UI
 -}
 main : Html.Html msg
-main = Html.div []
-       [
-         Hanabi.Hand.view aHand
-       , Hanabi.Pile.view aPile
-       ]
+main = Hanabi.Game.view aGame
